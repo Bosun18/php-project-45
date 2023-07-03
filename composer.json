@@ -7,5 +7,9 @@
             "email": "beliy-81@mail.ru"
         }
     ],
-    "require": {}
+    "bin": [
+      "bin/brain-games"
+    ],
+    "require": {},
+    "license": "proprietary"
 }
