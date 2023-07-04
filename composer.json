@@ -1,6 +1,14 @@
 {
     "name": "hexlet/code",
     "description": "php-project-45",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        },
+        "files": [
+            "src/Cli.php"
+        ]
+    },
     "authors": [
         {
             "name": "bosun18",
@@ -10,6 +18,8 @@
     "bin": [
       "bin/brain-games"
     ],
-    "require": {},
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.18"
+    },
     "license": "proprietary"
 }
