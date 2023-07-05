@@ -3,4 +3,4 @@
 ### CodeClimate
 [![Maintainability](https://api.codeclimate.com/v1/badges/f15a2600b04260ea939c/maintainability)](https://codeclimate.com/github/Bosun18/php-project-45/maintainability)
 ### asciinema make install and make brain-even
-https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl
+<script async id="asciicast-VCZ11CBGED0ChB8vI90R8y8Xl" src="https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl.js"></script>
