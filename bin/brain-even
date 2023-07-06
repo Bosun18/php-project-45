@@ -13,5 +13,5 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Src\Games\even;
+use function Src\Games\Even\even;
 even();
