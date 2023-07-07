@@ -10,17 +10,15 @@ use const Src\Engine\COUNT_GAMES;
 
 function maxDivisors(int $num1, int $num2)
 {
-    $length = ($num1 <= $num2) ? $num1 : $num2;
+    $length = min($num1, $num2);
     $arr1 = [];
     $arr2 = [];
     for ($i = 1; $i <= $length; $i++) {
-        for ($j = 1; $j <= $length; $j++) {
-            if ($num1 % $i === 0) {
-                $arr1[] = $i;
-            }
-            if ($num2 % $j === 0) {
-                $arr2[] = $j;
-            }
+        if ($num1 % $i === 0) {
+            $arr1[] = $i;
+        }
+        if ($num2 % $i === 0) {
+            $arr2[] = $i;
         }
     }
     return max(array_intersect($arr1, $arr2));
