@@ -11,7 +11,7 @@ use const Src\Engine\COUNT_GAMES;
 function gcd()
 {
     $countRightAnswer = 0;
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line('Find the greatest common divisor of given numbers.');
