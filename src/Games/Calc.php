@@ -10,6 +10,8 @@ use const Src\Engine\COUNT_GAMES;
 
 function isCalc(string $operator, int $num1, int $num2): string
 {
+    $rightAnswer = null;
+
     switch ($operator) {
         case '+':
             $rightAnswer = $num1 + $num2;
