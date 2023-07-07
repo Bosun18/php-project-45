@@ -8,7 +8,7 @@ use function Src\Engine\getAnswer;
 
 use const Src\Engine\COUNT_GAMES;
 
-function isCalc(string $operator, int $num1, int $num2) : string
+function isCalc(string $operator, int $num1, int $num2): string
 {
     switch ($operator) {
         case '+':
