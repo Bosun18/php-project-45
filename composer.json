@@ -11,6 +11,7 @@
             "src/Games/Even.php",
             "src/Games/Gcd.php",
             "src/Games/Progression.php",
+            "src/Games/Prime.php",
             "src/Games/Calc.php"
         ]
     },
@@ -25,6 +26,7 @@
         "bin/brain-even",
         "bin/brain-gcd",
         "bin/brain-progression",
+        "bin/brain-prime",
         "bin/brain-calc"
     ],
     "require": {
