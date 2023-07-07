@@ -41,6 +41,6 @@ function gcd()
         }
     }
     if ($countRightAnswer === COUNT_GAMES) {
-        line("Congratulations, $name");
+        line("Congratulations, %s!", $name);
     }
 }
