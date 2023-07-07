@@ -8,7 +8,7 @@ use function Src\Engine\getAnswer;
 
 use const Src\Engine\COUNT_GAMES;
 
-function isPrime($randNum): bool
+function isPrime(int $randNum)
 {
     for ($i = 2; $i <= $randNum / 2; $i++) {
         if ($randNum % $i === 0) {

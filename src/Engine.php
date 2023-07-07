@@ -7,9 +7,9 @@ use function cli\prompt;
 
 const COUNT_GAMES = 3;
 
-function getAnswer($task, $rightAnswer)
+function getAnswer(string $task, string $rightAnswer)
 {
-    line("Question: %s", (string)$task);
+    line("Question: %s", $task);
     $answer = prompt("Your answer");
     if ($answer === $rightAnswer) {
         line("Correct!");
