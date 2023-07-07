@@ -37,7 +37,7 @@ function calc()
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
         $expression = "$num1 $operator $num2";
-        if (getAnswer($expression, (string)isCalc($operator, $num1, $num2))) {
+        if (getAnswer($expression, isCalc($operator, $num1, $num2))) {
             $countRightAnswer++;
         } else {
             line("Let's try again, $name!");

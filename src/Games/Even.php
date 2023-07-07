@@ -21,7 +21,7 @@ function even(): void
     for ($i = 0; $i < COUNT_GAMES; $i++) {
         $randNum = rand(1, 20);
         $rightAnswer = ($randNum % 2 === 0) ? 'yes' : 'no';
-        if (getAnswer($randNum, $rightAnswer)) {
+        if (getAnswer((string)$randNum, $rightAnswer)) {
             $countRightAnswer++;
         } else {
             line("Let's try again, $name!");

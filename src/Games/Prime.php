@@ -31,7 +31,7 @@ function prime(): void
     for ($i = 0; $i < COUNT_GAMES; $i++) {
         $randNum = rand(2, 100);
         $rightAnswer = (isPrime($randNum) === true) ? 'yes' : 'no';
-        if (getAnswer($randNum, $rightAnswer)) {
+        if (getAnswer((string)$randNum, $rightAnswer)) {
             $countRightAnswer++;
         } else {
             line("Let's try again, $name!");
