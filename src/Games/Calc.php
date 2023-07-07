@@ -8,6 +8,22 @@ use function Src\Engine\getAnswer;
 
 use const Src\Engine\COUNT_GAMES;
 
+function isCalc($operator, $num1, $num2)
+{
+    switch ($operator) {
+        case '+':
+            $rightAnswer = $num1 + $num2;
+            break;
+        case '-':
+            $rightAnswer = $num1 - $num2;
+            break;
+        case '*':
+            $rightAnswer = $num1 * $num2;
+            break;
+    }
+    return $rightAnswer;
+}
+
 function calc()
 {
     $countRightAnswer = 0;
@@ -21,18 +37,7 @@ function calc()
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
         $expression = "$num1 $operator $num2";
-        switch ($operator) {
-            case '+':
-                $rightAnswer = $num1 + $num2;
-                break;
-            case '-':
-                $rightAnswer = $num1 - $num2;
-                break;
-            case '*':
-                $rightAnswer = $num1 * $num2;
-                break;
-        }
-        if (getAnswer($expression, (string)$rightAnswer)) {
+        if (getAnswer($expression, (string)isCalc($operator, $num1, $num2))) {
             $countRightAnswer++;
         } else {
             line("Let's try again, $name!");
