@@ -8,7 +8,7 @@ use function Src\Engine\getAnswer;
 
 use const Src\Engine\COUNT_GAMES;
 
-function maxDivisors($num1, $num2)
+function maxDivisors(int $num1, int $num2)
 {
     $length = ($num1 <= $num2) ? $num1 : $num2;
     $arr1 = [];
