@@ -6,3 +6,5 @@
 [![asciicast](https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl.svg)](https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl)
 ### acsinema make brain-calc
 [![asciicast](https://asciinema.org/a/5sNWARwOn2Cd4PdOiamxstyOy.svg)](https://asciinema.org/a/5sNWARwOn2Cd4PdOiamxstyOy)
+### acsinema make brain-gcd
+[![asciicast](https://asciinema.org/a/ItonvvtqzSHmylmHzV0ngHyiy.svg)](https://asciinema.org/a/Iton
