@@ -8,7 +8,7 @@ use const Src\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'What number is missing in the progression?';
 
-function returnProgress($firstElem, $progress): array
+function returnProgress(int $firstElem, int $progress): array
 {
     $arr = [$firstElem];
     for ($j = 0; $j < 10; $j++) {
