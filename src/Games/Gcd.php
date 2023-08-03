@@ -8,12 +8,12 @@ use const BrainGames\Engine\GAME_ROUNDS;
 
 const RULE_GAME = 'Find the greatest common divisor of given numbers.';
 
-function maxDivisors(int $num1, int $num2): string
+function getDivisors(int $num1, int $num2): string
 {
-    $length = min($num1, $num2);
+    $min = min($num1, $num2);
     $arr1 = [];
     $arr2 = [];
-    for ($i = 1; $i <= $length; $i += 1) {
+    for ($i = 1; $i <= $min; $i += 1) {
         if ($num1 % $i === 0) {
             $arr1[] = $i;
         }
@@ -31,7 +31,7 @@ function run(): void
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $expression = "$num1 $num2";
-        $question[] = [$expression => maxDivisors($num1, $num2)];
+        $question[] = [$expression => getDivisors($num1, $num2)];
     }
     getAnswer($question, RULE_GAME);
 }
