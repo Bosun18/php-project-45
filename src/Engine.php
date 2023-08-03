@@ -17,13 +17,12 @@ function getAnswer(array $question, string $ruleGame): void
         foreach ($item as $ask => $rightAnswer) {
             line("Question: %s", $ask);
             $answer = prompt("Your answer");
-            if ($answer === $rightAnswer) {
-                line("Correct!");
-            } else {
+            if ($answer !== $rightAnswer) {
                 line("$answer is wrong answer ;(. Correct answer was $rightAnswer.");
                 line("Let's try again, $name!");
                 return;
             }
+            line("Correct!");
         }
     }
     line("Congratulations, %s!", $name);
