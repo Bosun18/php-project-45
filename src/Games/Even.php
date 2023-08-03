@@ -8,9 +8,13 @@ use const BrainGames\Engine\GAME_ROUNDS;
 
 const RULE_GAME = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function isEven(int $randNum): string
+function isEven(int $randNum): bool
 {
-    return ($randNum % 2 === 0) ? 'yes' : 'no';
+    if ($randNum % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function run(): void
@@ -18,7 +22,8 @@ function run(): void
     $question = [];
     for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $randNum = rand(1, 20);
-        $question[] = [$randNum => isEven($randNum)];
+        $rightAnswer = isEven($randNum) ? 'yes' : 'no';
+        $question[] = [$randNum => $rightAnswer];
     }
     getAnswer($question, RULE_GAME);
 }

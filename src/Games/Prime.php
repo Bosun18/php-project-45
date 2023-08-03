@@ -23,7 +23,7 @@ function run(): void
     $question = [];
     for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $randNum = rand(2, 100);
-        $rightAnswer = (isPrime($randNum) === true) ? 'yes' : 'no';
+        $rightAnswer = isPrime($randNum) ? 'yes' : 'no';
         $question[] = [$randNum => $rightAnswer];
     }
     getAnswer($question, RULE_GAME);
