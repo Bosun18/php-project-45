@@ -6,7 +6,7 @@ use function BrainGames\Engine\getAnswer;
 
 use const BrainGames\Engine\GAME_ROUNDS;
 
-const NAME_GAME = 'What is the result of the expression?';
+const RULE_GAME = 'What is the result of the expression?';
 
 function isCalc(string $operator, int $num1, int $num2): string
 {
@@ -37,5 +37,5 @@ function run(): void
         $expression = "$num1 $operator $num2";
         $question[] = [$expression => isCalc($operator, $num1, $num2)];
     }
-    getAnswer($question, NAME_GAME);
+    getAnswer($question, RULE_GAME);
 }

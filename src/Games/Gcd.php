@@ -6,7 +6,7 @@ use function BrainGames\Engine\getAnswer;
 
 use const BrainGames\Engine\GAME_ROUNDS;
 
-const NAME_GAME = 'Find the greatest common divisor of given numbers.';
+const RULE_GAME = 'Find the greatest common divisor of given numbers.';
 
 function maxDivisors(int $num1, int $num2): string
 {
@@ -33,5 +33,5 @@ function run(): void
         $expression = "$num1 $num2";
         $question[] = [$expression => maxDivisors($num1, $num2)];
     }
-    getAnswer($question, NAME_GAME);
+    getAnswer($question, RULE_GAME);
 }

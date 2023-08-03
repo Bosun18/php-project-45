@@ -6,7 +6,7 @@ use function BrainGames\Engine\getAnswer;
 
 use const BrainGames\Engine\GAME_ROUNDS;
 
-const NAME_GAME = 'What number is missing in the progression?';
+const RULE_GAME = 'What number is missing in the progression?';
 
 function isProgress(int $firstElem, int $progress): array
 {
@@ -28,5 +28,5 @@ function run(): void
         $expression = implode(' ', $arr);
         $question[] = [$expression => $rightAnswer];
     }
-    getAnswer($question, NAME_GAME);
+    getAnswer($question, RULE_GAME);
 }

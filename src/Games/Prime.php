@@ -6,7 +6,7 @@ use function BrainGames\Engine\getAnswer;
 
 use const BrainGames\Engine\GAME_ROUNDS;
 
-const NAME_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const RULE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $randNum): bool
 {
@@ -26,5 +26,5 @@ function run(): void
         $rightAnswer = (isPrime($randNum) === true) ? 'yes' : 'no';
         $question[] = [$randNum => $rightAnswer];
     }
-    getAnswer($question, NAME_GAME);
+    getAnswer($question, RULE_GAME);
 }
