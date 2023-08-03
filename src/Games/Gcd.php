@@ -11,17 +11,13 @@ const RULE_GAME = 'Find the greatest common divisor of given numbers.';
 function getDivisors(int $num1, int $num2): string
 {
     $min = min($num1, $num2);
-    $arr1 = [];
-    $arr2 = [];
+    $result = null;
     for ($i = 1; $i <= $min; $i += 1) {
-        if ($num1 % $i === 0) {
-            $arr1[] = $i;
-        }
-        if ($num2 % $i === 0) {
-            $arr2[] = $i;
+        if ($num1 % $i === 0 and $num2 % $i === 0) {
+            $result = $i;
         }
     }
-    return max(array_intersect($arr1, $arr2));
+    return $result;
 }
 
 function run(): void
