@@ -10,8 +10,6 @@ const RULE_GAME = 'What is the result of the expression?';
 
 function calc(string $operator, int $num1, int $num2): string
 {
-    $rightAnswer = null;
-
     switch ($operator) {
         case '+':
             $rightAnswer = $num1 + $num2;
@@ -22,6 +20,8 @@ function calc(string $operator, int $num1, int $num2): string
         case '*':
             $rightAnswer = $num1 * $num2;
             break;
+        default:
+            $rightAnswer = false;
     }
     return $rightAnswer;
 }
