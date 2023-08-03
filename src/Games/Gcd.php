@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Games\Gcd;
+namespace BrainGames\Games\Gcd;
 
-use function Src\Engine\getAnswer;
+use function BrainGames\Engine\getAnswer;
 
-use const Src\Engine\COUNT_GAMES;
+use const BrainGames\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'Find the greatest common divisor of given numbers.';
 

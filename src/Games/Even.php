@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Games\Even;
+namespace BrainGames\Games\Even;
 
-use function Src\Engine\getAnswer;
+use function BrainGames\Engine\getAnswer;
 
-use const Src\Engine\COUNT_GAMES;
+use const BrainGames\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'Answer "yes" if the number is even, otherwise answer "no".';
 

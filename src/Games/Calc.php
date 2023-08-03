@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Games\Calc;
+namespace BrainGames\Games\Calc;
 
-use function Src\Engine\getAnswer;
+use function BrainGames\Engine\getAnswer;
 
-use const Src\Engine\COUNT_GAMES;
+use const BrainGames\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'What is the result of the expression?';
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Games\Prime;
+namespace BrainGames\Games\Prime;
 
-use function Src\Engine\getAnswer;
+use function BrainGames\Engine\getAnswer;
 
-use const Src\Engine\COUNT_GAMES;
+use const BrainGames\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

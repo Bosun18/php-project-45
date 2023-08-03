@@ -1,10 +1,10 @@
 <?php
 
-namespace Src\Games\Progression;
+namespace BrainGames\Games\Progression;
 
-use function Src\Engine\getAnswer;
+use function BrainGames\Engine\getAnswer;
 
-use const Src\Engine\COUNT_GAMES;
+use const BrainGames\Engine\COUNT_GAMES;
 
 const NAME_GAME = 'What number is missing in the progression?';
 
