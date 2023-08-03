@@ -23,7 +23,7 @@ function run(): void
     for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $randNum = rand(1, 20);
         $rightAnswer = isEven($randNum) ? 'yes' : 'no';
-        $question[] = [$randNum => $rightAnswer];
+        $question[] = [$randNum, $rightAnswer];
     }
     getAnswer($question, RULE_GAME);
 }

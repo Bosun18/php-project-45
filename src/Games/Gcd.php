@@ -27,7 +27,7 @@ function run(): void
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $expression = "$num1 $num2";
-        $question[] = [$expression => getDivisors($num1, $num2)];
+        $question[] = [$expression, getDivisors($num1, $num2)];
     }
     getAnswer($question, RULE_GAME);
 }
