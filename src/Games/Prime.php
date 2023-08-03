@@ -21,10 +21,10 @@ function isPrime(int $randNum): bool
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
-        $number = rand(2, 100);
-        $rightAnswer = isPrime($number) ? 'yes' : 'no';
-        $question[] = [$number, $rightAnswer];
+    for ($i = 1; $i <= GAME_ROUNDS; $i += 1) {
+        $randNum = rand(2, 100);
+        $rightAnswer = isPrime($randNum) ? 'yes' : 'no';
+        $question[] = [$randNum, $rightAnswer];
     }
     getAnswer($question, RULE_GAME);
 }
