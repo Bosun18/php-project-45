@@ -4,7 +4,7 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\getAnswer;
 
-use const BrainGames\Engine\COUNT_GAMES;
+use const BrainGames\Engine\GAME_ROUNDS;
 
 const NAME_GAME = 'What is the result of the expression?';
 
@@ -29,7 +29,7 @@ function isCalc(string $operator, int $num1, int $num2): string
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < COUNT_GAMES; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i++) {
         $operators = array('+', '-', '*');
         $operator = $operators[array_rand($operators)];
         $num1 = rand(1, 20);

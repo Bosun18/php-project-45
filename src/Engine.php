@@ -5,7 +5,7 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const COUNT_GAMES = 3;
+const GAME_ROUNDS = 3;
 
 function getAnswer(array $question, string $nameGames)
 {

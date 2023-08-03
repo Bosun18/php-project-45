@@ -4,7 +4,7 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\getAnswer;
 
-use const BrainGames\Engine\COUNT_GAMES;
+use const BrainGames\Engine\GAME_ROUNDS;
 
 const NAME_GAME = 'What number is missing in the progression?';
 
@@ -20,7 +20,7 @@ function isProgress(int $firstElem, int $progress): array
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < COUNT_GAMES; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i++) {
         $firstElem = rand(0, 20);
         $progress = rand(3, 5);
         $arr = isProgress($firstElem, $progress);
