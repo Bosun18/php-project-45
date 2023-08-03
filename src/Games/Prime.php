@@ -22,9 +22,9 @@ function run(): void
 {
     $question = [];
     for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
-        $randNum = rand(2, 100);
-        $rightAnswer = isPrime($randNum) ? 'yes' : 'no';
-        $question[] = [$randNum, $rightAnswer];
+        $number = rand(2, 100);
+        $rightAnswer = isPrime($number) ? 'yes' : 'no';
+        $question[] = [$number, $rightAnswer];
     }
     getAnswer($question, RULE_GAME);
 }
