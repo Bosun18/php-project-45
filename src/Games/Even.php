@@ -13,7 +13,7 @@ function isEven(int $randNum): string
     return ($randNum % 2 === 0) ? 'yes' : 'no';
 }
 
-function even(): void
+function run(): void
 {
     $question = [];
     for ($i = 0; $i < COUNT_GAMES; $i++) {

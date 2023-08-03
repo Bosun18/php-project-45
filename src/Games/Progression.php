@@ -17,7 +17,7 @@ function isProgress(int $firstElem, int $progress): array
     }
     return $arr;
 }
-function progression(): void
+function run(): void
 {
     $question = [];
     for ($i = 0; $i < COUNT_GAMES; $i++) {

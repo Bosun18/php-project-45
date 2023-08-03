@@ -26,7 +26,7 @@ function isCalc(string $operator, int $num1, int $num2): string
     return $rightAnswer;
 }
 
-function calc()
+function run(): void
 {
     $question = [];
     for ($i = 0; $i < COUNT_GAMES; $i++) {

@@ -24,7 +24,7 @@ function maxDivisors(int $num1, int $num2): string
     return max(array_intersect($arr1, $arr2));
 }
 
-function gcd()
+function run(): void
 {
     $question = [];
     for ($k = 0; $k < COUNT_GAMES; $k++) {

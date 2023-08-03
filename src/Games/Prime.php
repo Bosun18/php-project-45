@@ -18,7 +18,7 @@ function isPrime(int $randNum)
     return true;
 }
 
-function prime(): void
+function run(): void
 {
     $question = [];
     for ($i = 0; $i < COUNT_GAMES; $i++) {
