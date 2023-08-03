@@ -29,7 +29,7 @@ function calc(string $operator, int $num1, int $num2): string
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < GAME_ROUNDS; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $operators = array('+', '-', '*');
         $operator = $operators[array_rand($operators)];
         $num1 = rand(1, 20);

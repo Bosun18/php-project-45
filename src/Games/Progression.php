@@ -11,7 +11,7 @@ const RULE_GAME = 'What number is missing in the progression?';
 function isProgress(int $firstElem, int $progress): array
 {
     $arr = [$firstElem];
-    for ($j = 0; $j < 10; $j++) {
+    for ($j = 0; $j < 10; $j += 1) {
         $firstElem += $progress;
         $arr[] = $firstElem;
     }
@@ -20,7 +20,7 @@ function isProgress(int $firstElem, int $progress): array
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < GAME_ROUNDS; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $firstElem = rand(0, 20);
         $progress = rand(3, 5);
         $arr = isProgress($firstElem, $progress);

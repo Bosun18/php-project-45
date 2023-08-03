@@ -16,7 +16,7 @@ function isEven(int $randNum): string
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < GAME_ROUNDS; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $randNum = rand(1, 20);
         $question[] = [$randNum => isEven($randNum)];
     }

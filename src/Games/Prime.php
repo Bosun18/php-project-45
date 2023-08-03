@@ -10,7 +10,7 @@ const RULE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 function isPrime(int $randNum): bool
 {
-    for ($i = 2; $i <= $randNum / 2; $i++) {
+    for ($i = 2; $i <= $randNum / 2; $i += 1) {
         if ($randNum % $i === 0) {
             return false;
         }
@@ -21,7 +21,7 @@ function isPrime(int $randNum): bool
 function run(): void
 {
     $question = [];
-    for ($i = 0; $i < GAME_ROUNDS; $i++) {
+    for ($i = 0; $i < GAME_ROUNDS; $i += 1) {
         $randNum = rand(2, 100);
         $rightAnswer = (isPrime($randNum) === true) ? 'yes' : 'no';
         $question[] = [$randNum => $rightAnswer];
