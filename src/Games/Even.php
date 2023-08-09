@@ -10,11 +10,7 @@ const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(int $randNum): bool
 {
-    if ($randNum % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return $randNum % 2 === 0;
 }
 
 function run(): void
