@@ -25,8 +25,8 @@ function run(): void
         $progress = rand(3, 5);
         $arr = makeProgress($firstElem, $progress);
         $rightAnswer = implode('', array_splice($arr, rand(0, 10), 1, '..'));
-        $expression = implode(' ', $arr);
-        $gameData[] = [$expression, $rightAnswer];
+        $question = implode(' ', $arr);
+        $gameData[] = [$question, $rightAnswer];
     }
     startGame($gameData, RULE);
 }

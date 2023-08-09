@@ -26,8 +26,9 @@ function run(): void
     for ($k = 0; $k < GAME_LEVEL; $k += 1) {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
-        $expression = "$num1 $num2";
-        $gameData[] = [$expression, getDivisors($num1, $num2)];
+        $question = "$num1 $num2";
+        $rightAnswer = getDivisors($num1, $num2);
+        $gameData[] = [$question, $rightAnswer];
     }
     startGame($gameData, RULE);
 }

@@ -30,8 +30,9 @@ function run(): void
         $operator = $operators[array_rand($operators)];
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
-        $expression = "$num1 $operator $num2";
-        $gameData[] = [$expression, calc($operator, $num1, $num2)];
+        $question = "$num1 $operator $num2";
+        $rightAnswer = calc($operator, $num1, $num2);
+        $gameData[] = [$question, $rightAnswer];
     }
     startGame($gameData, RULE);
 }

@@ -21,9 +21,9 @@ function run(): void
 {
     $gameData = [];
     for ($i = 0; $i < GAME_LEVEL; $i += 1) {
-        $randNum = rand(1, 20);
-        $rightAnswer = isEven($randNum) ? 'yes' : 'no';
-        $gameData[] = [$randNum, $rightAnswer];
+        $question = rand(1, 20);
+        $rightAnswer = isEven($question) ? 'yes' : 'no';
+        $gameData[] = [$question, $rightAnswer];
     }
     startGame($gameData, RULE);
 }
