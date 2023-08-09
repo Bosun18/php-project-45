@@ -23,9 +23,9 @@ function run(): void
     for ($i = 0; $i < GAME_LEVEL; $i += 1) {
         $firstElem = rand(0, 20);
         $progress = rand(3, 5);
-        $arr = makeProgress($firstElem, $progress);
-        $rightAnswer = implode('', array_splice($arr, rand(0, 10), 1, '..'));
-        $question = implode(' ', $arr);
+        $makeProgress = makeProgress($firstElem, $progress);
+        $rightAnswer = implode('', array_splice($makeProgress, rand(0, 10), 1, '..'));
+        $question = implode(' ', $makeProgress);
         $gameData[] = [$question, $rightAnswer];
     }
     startGame($gameData, RULE);
