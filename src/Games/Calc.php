@@ -26,7 +26,7 @@ function run(): void
 {
     $gameData = [];
     for ($i = 0; $i < GAME_LEVEL; $i += 1) {
-        $operators = array('+', '-', '*');
+        $operators = ['+', '-', '*'];
         $operator = $operators[array_rand($operators)];
         $num1 = rand(1, 20);
         $num2 = rand(1, 20);
