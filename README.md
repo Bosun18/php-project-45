@@ -3,7 +3,8 @@
 ### About the program
 #### Program "Brain games" consists of five mathematical mini-games.
 ### Requirements:
-#### PHP 8.1.2
+#### PHP 7
+#### Composer 2.5.8
 ### Install:
 #### 1. Clone your own repository
 #### 2. Go to working directory
