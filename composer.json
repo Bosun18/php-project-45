@@ -2,9 +2,6 @@
     "name": "hexlet/code",
     "description": "php-project-45",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        },
         "files": [
             "src/Engine.php",
             "src/Cli.php",
