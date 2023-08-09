@@ -11,10 +11,10 @@ function startGame(array $gameData, string $rule): void
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    line("Hello, $name!");
     line($rule);
     foreach ($gameData as [$ask, $rightAnswer]) {
-        line("Question: " . $ask);
+        line("Question: $ask");
         $answer = prompt("Your answer");
         if ($answer !== $rightAnswer) {
             line("$answer is wrong answer ;(. Correct answer was $rightAnswer.");
