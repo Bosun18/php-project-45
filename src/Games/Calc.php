@@ -12,18 +12,14 @@ function calc(string $operator, int $num1, int $num2): string
 {
     switch ($operator) {
         case '+':
-            $rightAnswer = $num1 + $num2;
-            break;
+            return $num1 + $num2;
         case '-':
-            $rightAnswer = $num1 - $num2;
-            break;
+            return $num1 - $num2;
         case '*':
-            $rightAnswer = $num1 * $num2;
-            break;
+            return $num1 * $num2;
         default:
-            $rightAnswer = false;
+            return false;
     }
-    return $rightAnswer;
 }
 
 function run(): void
