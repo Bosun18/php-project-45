@@ -2,11 +2,11 @@
 
 namespace BrainGames\Games\Gcd;
 
-use function BrainGames\Engine\getAnswer;
+use function BrainGames\Engine\startGame;
 
 use const BrainGames\Engine\GAME_LEVEL;
 
-const RULE_GAME = 'Find the greatest common divisor of given numbers.';
+const RULE = 'Find the greatest common divisor of given numbers.';
 
 function getDivisors(int $num1, int $num2): string
 {
@@ -22,12 +22,12 @@ function getDivisors(int $num1, int $num2): string
 
 function run(): void
 {
-    $question = [];
+    $gameData = [];
     for ($k = 0; $k < GAME_LEVEL; $k += 1) {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $expression = "$num1 $num2";
-        $question[] = [$expression, getDivisors($num1, $num2)];
+        $gameData[] = [$expression, getDivisors($num1, $num2)];
     }
-    getAnswer($question, RULE_GAME);
+    startGame($gameData, RULE);
 }

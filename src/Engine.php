@@ -7,13 +7,13 @@ use function cli\prompt;
 
 const GAME_LEVEL = 3;
 
-function getAnswer(array $question, string $ruleGame): void
+function startGame(array $gameData, string $rule): void
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line($ruleGame);
-    foreach ($question as [$ask, $rightAnswer]) {
+    line($rule);
+    foreach ($gameData as [$ask, $rightAnswer]) {
         line("Question: " . $ask);
         $answer = prompt("Your answer");
         if ($answer !== $rightAnswer) {

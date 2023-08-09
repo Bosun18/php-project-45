@@ -2,11 +2,11 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Engine\getAnswer;
+use function BrainGames\Engine\startGame;
 
 use const BrainGames\Engine\GAME_LEVEL;
 
-const RULE_GAME = 'Answer "yes" if the number is even, otherwise answer "no".';
+const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(int $randNum): bool
 {
@@ -19,11 +19,11 @@ function isEven(int $randNum): bool
 
 function run(): void
 {
-    $question = [];
+    $gameData = [];
     for ($i = 0; $i < GAME_LEVEL; $i += 1) {
         $randNum = rand(1, 20);
         $rightAnswer = isEven($randNum) ? 'yes' : 'no';
-        $question[] = [$randNum, $rightAnswer];
+        $gameData[] = [$randNum, $rightAnswer];
     }
-    getAnswer($question, RULE_GAME);
+    startGame($gameData, RULE);
 }
