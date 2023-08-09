@@ -8,7 +8,7 @@
 #### Make 4.3
 ### Install:
 #### 1. git clone git@github.com:Bosun18/php-project-45.git
-#### 2. php-project-45
+#### 2. cd php-project-45
 #### 3. make install
 #### 4. Launch any of the five games
 * make brain-even
