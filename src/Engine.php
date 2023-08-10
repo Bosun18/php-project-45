@@ -13,8 +13,8 @@ function startGame(array $gameData, string $rule): void
     $name = prompt('May I have your name?');
     line("Hello, $name!");
     line($rule);
-    foreach ($gameData as [$ask, $rightAnswer]) {
-        line("Question: $ask");
+    foreach ($gameData as [$question, $rightAnswer]) {
+        line("Question: $question");
         $answer = prompt("Your answer");
         if ($answer !== $rightAnswer) {
             line("$answer is wrong answer ;(. Correct answer was $rightAnswer.");
