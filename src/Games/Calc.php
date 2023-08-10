@@ -4,7 +4,7 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\startGame;
 
-use const BrainGames\Engine\GAME_LEVEL;
+use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const RULE = 'What is the result of the expression?';
 
@@ -25,7 +25,7 @@ function calc(string $operator, int $num1, int $num2): string
 function run(): void
 {
     $gameData = [];
-    for ($i = 0; $i < GAME_LEVEL; $i += 1) {
+    for ($i = 0; $i < NUMBER_OF_ROUNDS; $i += 1) {
         $operators = ['+', '-', '*'];
         $operator = $operators[array_rand($operators)];
         $num1 = rand(1, 20);
