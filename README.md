@@ -7,15 +7,15 @@
 #### Composer >=2.5.8
 #### Make >=4.3
 ### Install:
-#### 1. git clone `git@github.com:Bosun18/php-project-45.git`
-#### 2. cd php-project-45
-#### 3. make install
+#### 1. `git clone git@github.com:Bosun18/php-project-45.git`
+#### 2. `cd php-project-45`
+#### 3. `make install`
 #### 4. Launch any of the five games
-* make brain-even
-* make brain-calc
-* make brain-gcd
-* make brain progression
-* make brain-prime
+* `make brain-even`
+* `make brain-calc`
+* `make brain-gcd`
+* `make brain progression`
+* `make brain-prime`
 ### asciinema make install and make brain-even
 [![asciicast](https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl.svg)](https://asciinema.org/a/VCZ11CBGED0ChB8vI90R8y8Xl)
 ### asciinema make brain-calc
