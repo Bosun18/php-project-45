@@ -16,7 +16,6 @@ function getMaxDivisor(int $num1, int $num2): string
             return $i;
         }
     }
-    return '1';
 }
 
 function run(): void
