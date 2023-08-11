@@ -12,7 +12,7 @@ function getMaxDivisor(int $num1, int $num2): string
 {
     $min = min($num1, $num2);
     for ($i = $min; $i >= 1; $i -= 1) {
-        if ($num1 % $i === 0 and $num2 % $i === 0) {
+        if ($num1 % $i === 0 && $num2 % $i === 0) {
             return $i;
         }
     }
