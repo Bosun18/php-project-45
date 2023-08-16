@@ -4,11 +4,11 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\startGame;
 
-use const BrainGames\Engine\NUMBER_OF_ROUND;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 const RULE = 'What number is missing in the progression?';
 
-function makeProgress(int $firstElem, int $progress): array
+function progression(int $firstElem, int $progress): array
 {
     $arr = [$firstElem];
     for ($j = 0; $j < 10; $j += 1) {
@@ -20,10 +20,10 @@ function makeProgress(int $firstElem, int $progress): array
 function run(): void
 {
     $gameData = [];
-    for ($i = 0; $i < NUMBER_OF_ROUND; $i += 1) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i += 1) {
         $firstElem = rand(0, 20);
-        $progress = rand(3, 5);
-        $makeProgress = makeProgress($firstElem, $progress);
+        $step = rand(3, 5);
+        $makeProgress = progression($firstElem, $step);
         $rightAnswer = implode('', array_splice($makeProgress, rand(0, 10), 1, '..'));
         $question = implode(' ', $makeProgress);
         $gameData[] = [$question, $rightAnswer];
